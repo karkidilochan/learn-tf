@@ -1,2 +1,28 @@
+# Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform working directory
 .terraform/
-aws/
+.terraform.lock.hcl
+
+# Terraform variables (sensitive)
+*.tfvars
+*.tfvars.json
+
+# Terraform plan output
+terraform.tfplan
+
+# Terraform crash logs
+crash.log
+
+# Provider credentials (AWS, GCP, Azure)
+.aws/
+.gcloud/
+.azure/
+
+# Local and system-specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
